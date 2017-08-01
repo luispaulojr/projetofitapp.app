@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Treinador</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-list-header>
+            Escolha seu Treinador
+        </ion-list-header>
+
+        <ion-item (click)="openModal({coachNum: 0})">
+            <ion-avatar item-start>
+                <img src="http://www.redditstatic.com/icon.png">
+            </ion-avatar>
+            <h2>Luis</h2>
+            <h3>Rio de Janeiro</h3>
+            <p>Crossfit</p>
+        </ion-item>
+        <ion-item (click)="openModal({coachNum: 1})">
+            <ion-avatar item-start>
+                <img src="http://www.redditstatic.com/icon.png">
+            </ion-avatar>
+            <h2>Paulo</h2>
+            <h3>Maricá</h3>
+            <p>Musculação</p>
+        </ion-item>
+
+        <ion-item (click)="openModal({coachNum: 2})">
+            <ion-avatar item-start>
+                <img src="http://www.redditstatic.com/icon.png">
+            </ion-avatar>
+            <h2>Juliana</h2>
+            <h3>Minas Gerais</h3>
+            <p>Exercícios Funcionais</p>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,17 +1,25 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="{{user.fotoProfile}}">
+                    </ion-avatar>
+                    <h2>{{user.nome}}</h2>
+                    <p>{{user.titulo}}</p>
+                </ion-item>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+    <ion-content>
+        <ion-list>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
-    </ion-list>
-  </ion-content>
+        </ion-list>
+    </ion-content>
 
 </ion-menu>
 
