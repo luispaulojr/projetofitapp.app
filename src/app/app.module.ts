@@ -7,8 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { FotoPage } from '../pages/foto/foto';
 
 // modal treinador
-import { TreinadorPage, ModalTreinador } from '../pages/treinador/treinador';
-
+import { TreinadorPage } from '../pages/treinador/treinador';
+import { ModalTreinador } from '../pages/treinador/treinador'
 import { SeriesPage } from '../pages/series/series';
 import { ReceitasPage } from '../pages/receitas/receitas';
 import { DespertadorPage } from '../pages/despertador/despertador';

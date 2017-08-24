@@ -1,5 +1,7 @@
 import { Injectable, Component } from '@angular/core';
 import { IonicPage, NavController, ModalController, Platform, NavParams, ViewController } from 'ionic-angular';
+//import { ModalTreinador } from 'treinador-modal-content';
+
 
 @IonicPage()
 @Component({
@@ -23,46 +25,45 @@ export class TreinadorPage {
 @Component({
   selector: 'page-treinador-modal',
   template: `
-<ion-header>
-    <ion-toolbar>
-        <ion-title>
-            Instrutor - {{treinador.treinador.nome}}
-        </ion-title>
-        <ion-buttons start>
-            <button ion-button (click)="dismiss()">
-        <span ion-text color="primary" showWhen="ios">Cancel</span>
-        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
-      </button>
-        </ion-buttons>
-    </ion-toolbar>
+  <ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Instrutor - {{treinador.treinador.nome}}
+      </ion-title>
+      <ion-buttons start>
+          <button ion-button (click)="dismiss()">
+          <span ion-text color="primary" showWhen="ios">Cancel</span>
+          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-card>
-        <img src="{{treinador.treinador.foto}}" />
+  <ion-card>
+      <img src="{{treinador.treinador.foto}}" />
 
-        <ion-card-content>
-            <ion-card-title>
-                {{treinador.treinador.nome}}
-                <ion-note>
-                    {{treinador.treinador.cref}}</ion-note>
-            </ion-card-title>
-            <p>
-                {{treinador.treinador.descricao}}
-            </p>
-        </ion-card-content>
+      <ion-card-content>
+          <ion-card-title>
+              {{treinador.treinador.nome}}
+              <ion-note>
+                  {{treinador.treinador.cref}}</ion-note>
+          </ion-card-title>
+          <p>
+              {{treinador.treinador.descricao}}
+          </p>
+      </ion-card-content>
 
-        <ion-item>
-            <ion-icon name='md-map' item-start style="color: #d03e84"></ion-icon>
-            {{treinador.treinador.regiao}}
-        </ion-item>
-
-        <ion-item>
-            <ion-icon name='md-trophy' item-start style="color: #55acee"></ion-icon>
-            {{treinador.treinador.especialidade}}
-            <button ion-button clear large item-end><ion-icon name='checkmark-circle-outline' color="danger"></ion-icon></button>
-        </ion-item>
-    </ion-card>
+      <ion-item>
+          <ion-icon name='md-map' item-start style="color: #d03e84"></ion-icon>
+          {{treinador.treinador.regiao}}
+      </ion-item>
+      <ion-item>
+          <ion-icon name='md-trophy' item-start style="color: #55acee"></ion-icon>
+          {{treinador.treinador.especialidade}}
+          <button ion-button clear large item-end><ion-icon name='checkmark-circle-outline' color="danger"></ion-icon></button>
+      </ion-item>
+  </ion-card>
 </ion-content>
 `,
 })

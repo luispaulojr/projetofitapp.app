@@ -6,11 +6,27 @@
         <ion-title>Home</ion-title>
     </ion-navbar>
 </ion-header>
+<ion-content padding class="home-page">
+    <h1>Seja Bem Vindo!</h1>
+    <ion-card>
+        <ion-card-content>
+            <img src="http://rachaeldobsonpt.com/wp-content/uploads/2015/01/slide-dumbbell.jpg" />
+        </ion-card-content>
+    </ion-card>
 
-<ion-content padding>
-    <h3>Projeto Fit App</h3>
+    <ion-list>
+        <ion-item>
+            Séries
+            <button ion-button item-end clear color="danger" (click)="openModal({seriehNum: 1})" outline icon-end>Workout<ion-icon name='clipboard'></ion-icon></button>
+        </ion-item>
+        <ion-item>
+            Instrutor
+            <button ion-button item-end clear color="danger" outline icon-end>Luis<ion-icon name='ribbon'></ion-icon></button>
+        </ion-item>
 
-    <p>
-        Seja Bem vindo ao ProjetoFitApp
-    </p>
+        <ion-item>
+            Nutricionista
+            <button ion-button item-end clear color="danger" outline icon-end>Valéria<ion-icon name='restaurant'></ion-icon></button>
+        </ion-item>
+    </ion-list>
 </ion-content>
